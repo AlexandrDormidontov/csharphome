@@ -5,25 +5,29 @@
 // 22 3 9 -> 22
 
 Console.WriteLine("start");
-int a = 2;
-int b = 3;
-int c = 7;
-int max = a;
-if (b > max)
+Console.WriteLine("Введите первое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите третье число: ");
+int c = Convert.ToInt32(Console.ReadLine());
+if (a > b)
 {
-    if (b > c)
+    if (a > c)
     {
-        b = max;
-        Console.WriteLine("max");
+        Console.WriteLine("a");
     }
-    else 
-    { 
-        c = max;
-        Console.WriteLine("max");
-        }
- else
- {
-    c > max;
-    max = c;
- }       
+    else
+    {
+        Console.WriteLine("c");
+    }
 }
+else if (b > c)
+{
+    Console.WriteLine("b");
+}
+else
+{
+    Console.WriteLine("c");
+}
+Console.WriteLine("end");
