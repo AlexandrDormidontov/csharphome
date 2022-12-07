@@ -7,9 +7,10 @@ Console.WriteLine("start");
 
 Console.WriteLine("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int i = 1;
 Console.WriteLine("найти количество четных чисел от 1 до " + N);
-if (i <= N)
+
+int i = 1;
+while (i <= N)
 {
     if (i % 2 == 0)
     {
