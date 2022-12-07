@@ -14,4 +14,8 @@ if (a % 2 == 0) //запись проверки числа на четность
 {
     Console.WriteLine("число четное");
 }
+else
+{
+    Console.WriteLine("число нечетное");
+}
 Console.WriteLine("end");
