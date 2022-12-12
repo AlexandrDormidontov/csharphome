@@ -12,7 +12,6 @@ int a = Convert.ToInt32(Console.ReadLine());
 while(a > 1000) a/= 10;
 Console.WriteLine(a%10);
 
-//while(a > 100);
-//Console.WriteLine(a%10);
 
-Console.WriteLine("end");
+
+Console.WriteLine("третьей цифры нет");
