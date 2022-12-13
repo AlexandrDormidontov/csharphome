@@ -7,11 +7,17 @@
 Console.WriteLine("start");
 
 Console.WriteLine("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+int number = int.Parse(Console.ReadLine());
+if (number > 99)
+{
+    int num = (int)Math.Floor(Math.Log10(number))-2;
+    int num2 = (int)Math.Pow(10, num);
+    Console.WriteLine((number / num2 % 10) % 10);
+}
+else
+{
+    Console.WriteLine("Третьей цифры нет");
+}
 
-while(a > 1000) a/= 10;
-Console.WriteLine(a%10);
 
-
-
-Console.WriteLine("третьей цифры нет");
+Console.WriteLine("end");
